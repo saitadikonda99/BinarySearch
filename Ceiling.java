@@ -1,6 +1,5 @@
 /* The ceiling function of a real number is the least integer number greater than or 
-   equal to the given number
-   */ 
+   equal to the given number */ 
 
 import java.util.Scanner;
 import java.util.Arrays;
