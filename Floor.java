@@ -1,10 +1,8 @@
-/* The ceiling function of a real number is the least integer number greater than or 
-   equal to the given number
-   */ 
+// floor in a sorted array
 
 import java.util.Scanner;
 import java.util.Arrays;
-	public class Ceiling {
+	public class Floor {
 		public static void main( String[] args ) {
 		Scanner in = new Scanner( System.in );
 		System.out.println(" Enter the Array: ");
@@ -17,27 +15,21 @@ import java.util.Arrays;
 			arr[k] = in.nextInt();
 		
 	// input the target element 
-	// -1 if there is no ceiling element 
 		
 		System.out.print(" Enter the target element : ");
 		int target = in.nextInt();
 		
-	int ans = Ceiling( arr , target );
-	
+	int ans = Floor( arr , target );
+		
 	// print the result
+	// -1 if there is no floor element 
 
-	   System.out.println( ans );	
+	   	System.out.println( ans );	
 
 		}
 
-	// return the index : smallest number >= target 	
-	static int Ceiling( int[] arr , int target ) {
-
-// but what if the target element is greater than the greatest element in the array		
-		
-		if( target > arr[arr.length-1] ) {
-			 return -1;
-			}
+	// return the index : greatest number <= target 	
+	static int Floor( int[] arr , int target ) {
 		
 		 int start = 0;
 		 int end   = arr.length - 1;
@@ -57,6 +49,6 @@ import java.util.Arrays;
 					return mid;
 				}
 			}
-		return start;
+		return end;
 		}
 }
