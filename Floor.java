@@ -28,6 +28,7 @@ import java.util.Arrays;
 
 		}
 
+
 	// return the index : greatest number <= target 	
 	static int Floor( int[] arr , int target ) {
 		
@@ -35,7 +36,7 @@ import java.util.Arrays;
 		 int end   = arr.length - 1;
 		   	while( start <= end ) {
 
-		// calculate the mid
+				// calculate the mid
 
 				int mid = start + ( end - start ) / 2;
 				
