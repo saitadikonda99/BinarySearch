@@ -29,7 +29,8 @@ import java.util.Arrays;
 	   System.out.println( ans );	
 
 		}
-	
+
+	// return the index : smallest no  >= target 	
 	static int Ceiling( int[] arr , int target ) {
 
 // but what if the target element is greater than the greatest element in the array		
